@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ShubhamBudhiraja/todo-assignment/static/css/main.fbd74313.css",
+    "main.js": "/ShubhamBudhiraja/todo-assignment/static/js/main.950c24ed.js",
+    "index.html": "/ShubhamBudhiraja/todo-assignment/index.html",
+    "main.fbd74313.css.map": "/ShubhamBudhiraja/todo-assignment/static/css/main.fbd74313.css.map",
+    "main.950c24ed.js.map": "/ShubhamBudhiraja/todo-assignment/static/js/main.950c24ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbd74313.css",
+    "static/js/main.950c24ed.js"
+  ]
+}
