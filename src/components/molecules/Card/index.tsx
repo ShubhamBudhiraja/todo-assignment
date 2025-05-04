@@ -4,13 +4,14 @@ import style from "./index.module.scss";
 interface ICard {
     task: string;
     handleEditClick: () => void;
+    handleOnDrag: (e: React.DragEvent) => void;
 }
 
 const Card = (props: ICard) => {
-    const { task, handleEditClick } = props;
+    const { task, handleEditClick, handleOnDrag } = props;
 
     return (
-        <div className={style.cardWrap}>
+        <div className={style.cardWrap} draggable onDragStart={handleOnDrag}>
             <img src="/images/drag.png" className="d-none d-md-block" alt="" />
             <div className={style.taskWrap}>
                 <p>{task}</p>
@@ -19,7 +20,10 @@ const Card = (props: ICard) => {
                 src="/images/edit.png"
                 className={style.editIcon}
                 alt=""
-                onClick={handleEditClick}
+                onClick={(e: any) => {
+                    e.preventDefault();
+                    handleEditClick();
+                }}
             />
         </div>
     );

@@ -1,5 +1,5 @@
 export interface ITask {
     todo: string;
-    completed: boolean;
+    completed?: boolean;
     id: string;
 }

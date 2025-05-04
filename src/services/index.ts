@@ -9,7 +9,19 @@ const useApiMethods = () => {
         return response;
     };
 
-    const addCard = async () => {};
+    const addCard = async (task: string, status: boolean) => {
+        const response = await fetch("https://dummyjson.com/todos/add", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                todo: task,
+                completed: status,
+                userId: 13,
+            }),
+        }).then((res) => res.json());
+
+        return response;
+    };
 
     const updateTask = async (
         id: string,
@@ -20,8 +32,6 @@ const useApiMethods = () => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(params),
         }).then((res) => res.json());
-
-        console.log(response, "helo");
 
         return response;
     };
