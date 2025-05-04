@@ -12,12 +12,12 @@ const Card = (props: ICard) => {
 
     return (
         <div className={style.cardWrap} draggable onDragStart={handleOnDrag}>
-            <img src="/images/drag.png" className="d-none d-md-block" alt="" />
+            <img src="images/drag.png" className="d-none d-md-block" alt="" />
             <div className={style.taskWrap}>
                 <p>{task}</p>
             </div>
             <img
-                src="/images/edit.png"
+                src="images/edit.png"
                 className={style.editIcon}
                 alt=""
                 onClick={(e: any) => {

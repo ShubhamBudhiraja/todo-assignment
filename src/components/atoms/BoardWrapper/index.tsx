@@ -24,11 +24,7 @@ const BoardWrapper = (props: IBoardWrapper) => {
             <div className={style.wrapperHead}>
                 <h3>{title}</h3>
                 {handleAdd && (
-                    <img
-                        src="/images/plus.png"
-                        alt="plus"
-                        onClick={handleAdd}
-                    />
+                    <img src="images/plus.png" alt="plus" onClick={handleAdd} />
                 )}
             </div>
             {children}
