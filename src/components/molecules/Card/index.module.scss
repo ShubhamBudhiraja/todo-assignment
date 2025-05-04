@@ -1,0 +1,48 @@
+.cardWrap {
+    background-color: #f3f3f3;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 0.75rem;
+    }
+
+    .taskWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: calc(100% - 2.75rem);
+        margin-left: 0.5rem;
+
+        p {
+            font-weight: 500;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+    img {
+        width: 0.875rem;
+        height: 0.875rem;
+        cursor: pointer;
+    }
+
+    .editIcon {
+        position: absolute;
+        top: 1.125rem;
+        right: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .cardWrap {
+        .taskWrap {
+            margin-left: 0;
+        }
+    }
+}

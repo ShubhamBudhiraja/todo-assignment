@@ -1,0 +1,35 @@
+.wrapper {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    max-height: calc(100vh - 8rem);
+    overflow: auto;
+    padding: 0 1rem 1rem;
+    width: 25%;
+    position: relative;
+
+    .wrapperHead {
+        background-color: #fff;
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding: 1rem 0;
+        z-index: 1;
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .wrapper {
+        min-width: calc(50% - 0.75rem);
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        min-width: 85%;
+    }
+}

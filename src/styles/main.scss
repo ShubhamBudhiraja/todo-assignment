@@ -1,0 +1,82 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+html,
+head,
+body,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+figure,
+img {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    color: #000;
+}
+
+.btn.btn-outline-secondary {
+    color: #222;
+    border-color: #222;
+    border-radius: 2.5rem;
+
+    &:hover {
+        background-color: #222;
+        color: #fff;
+        border-color: #222;
+    }
+}
+
+.btn.btn-secondary {
+    color: #fff;
+    border-color: #222;
+    border-radius: 2.5rem;
+    background-color: #222;
+
+    &:hover {
+        background-color: #222;
+        color: #fff;
+        border-color: #222;
+    }
+}
+
+.btn-close:focus {
+    box-shadow: unset;
+}
+
+.form-check-input {
+    cursor: pointer;
+
+    &:focus {
+        box-shadow: unset;
+        border-color: #222;
+    }
+
+    &:checked {
+        background-color: #222;
+        border-color: #222;
+    }
+
+    &[type="checkbox"] {
+        outline: unset;
+    }
+}

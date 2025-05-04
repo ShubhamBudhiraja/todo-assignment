@@ -1,0 +1,12 @@
+.boardsContainer {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .boardsContainer {
+        overflow: auto;
+        margin: 0 -1rem;
+        padding: 0 1rem;
+    }
+}
